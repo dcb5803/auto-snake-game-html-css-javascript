@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake AI - Manual & Auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="header">
+            <h1>Snake <span id="mode-statusText">Manual</span></h1>
+            <div id="score">Score: 0</div>
+        </div>
+
+        <canvas id="snakeGame" width="400" height="400"></canvas>
+
+        <div class="controls">
+            <button id="manualBtn" class="active" onclick="setMode('manual')">Manual Play</button>
+            <button id="autoBtn" onclick="setMode('auto')">Auto Play (AI)</button>
+            <button class="reset" onclick="resetGame()">Reset Game</button>
+        </div>
+        
+        <p class="instructions">Manual: Use Arrow Keys | Auto: AI Pathfinding</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
